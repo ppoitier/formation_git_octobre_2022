@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background: linear-gradient(60deg, #22223b 0%, #4a4e69 100%);
+    width: 100vw;
+    height: 100vh;
+    color: aliceblue;
+}
+
+h1 {
+    display: block;
+    width: 60rem;
+    padding: 4rem 8rem;
+
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-size: 7.2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+
+    color: currentColor;
+    border: .8rem solid currentColor;
+
+    animation-name: slideIn;
+    animation-timing-function: ease-out;
+    animation-duration: 1s;
+}
+
+@keyframes slideIn {
+    0% {
+        left: -60rem;
+        opacity: 0;
+    }
+
+    100% {
+        left: 50%;
+        opacity: 1;
+    }
+}
